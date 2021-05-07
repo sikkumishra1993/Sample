@@ -40,7 +40,7 @@ pipeline {
                     // // compressLog: true, 
                     // subject: 'Job \'${JOB_NAME}\' (Build ${BUILD_NUMBER}) ${currentBuild.result}', 
                     // to: 'sikkumishra1993@gmail.com'
-                    emailext body: 'please go to ${BUILD_URL} and verify the build', subject: 'Job \'${JOB_NAME}\' (Build ${BUILD_NUMBER}) ${currentBuild.result}', to: 'sikkumishra1993@gmail.com'
+                    mail bcc: '', body: 'scripted pipeline test', cc: '', from: '', replyTo: '', subject: 'scripted pipeline test', to: 'admin@admin'
                 }
             }
     
